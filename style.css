@@ -1,0 +1,367 @@
+/* =========================================
+   1. الإعدادات العامة (Global Styles)
+========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #3498db;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9;
+}
+
+/* =========================================
+   2. شريط التنقل (Header & Navbar)
+========================================= */
+.header-sec {
+    background: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 15px 0;
+}
+
+.header-sec .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-sec .logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #2c3e50;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li.active a {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* =========================================
+   3. القسم الرئيسي (Landing Section)
+========================================= */
+.landing {
+    background: linear-gradient(rgba(44, 62, 80, 0.85), rgba(44, 62, 80, 0.85)), url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200&auto=format&fit=crop') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.landing .Content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.landing .Content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.landing button, .time_day button {
+    background: #3498db;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.landing button:hover, .time_day button:hover {
+    background: #2980b9;
+    transform: scale(1.05);
+}
+
+/* =========================================
+   4. العناوين المشتركة للأقسام (Section Titles)
+========================================= */
+.title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.title h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.title h5 {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    font-weight: normal;
+}
+
+/* =========================================
+   5. الصناديق والبطاقات (Cards & Boxes)
+========================================= */
+.service-sec, .News, .goal, .parentss, .contact {
+    padding: 80px 0;
+}
+
+.boxs, .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.box {
+    background: #fff;
+    flex: 1;
+    min-width: 250px;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.box h3, .box h4 {
+    color: #2c3e50;
+    margin: 15px 0 10px;
+}
+
+.box p {
+    color: #7f8c8d;
+    font-size: 0.95rem;
+}
+
+.box img {
+    margin-bottom: 15px;
+}
+
+/* =========================================
+   6. الإحصائيات (Goals/Stats)
+========================================= */
+.goal {
+    background: #2c3e50;
+    color: #fff;
+}
+
+.goal .title h2, .goal .title h5, .goal .box h3 {
+    color: #fff;
+}
+
+.goal .box {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.goal .box h2 {
+    font-size: 2.5rem;
+    color: #3498db;
+}
+
+/* =========================================
+   7. تواصل معنا (Contact Section)
+========================================= */
+.contact-5 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.contact-5 > div {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact_us h2, .time_day h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.contact_us span, .contact_us h4 {
+    display: block;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* =========================================
+   8. التذييل (Footer)
+========================================= */
+.footer {
+    background: #1a252f;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.footer h1 {
+    margin-bottom: 20px;
+}
+
+.footer p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: #bdc3c7;
+}
+
+.icon-footer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.icon-footer img {
+    transition: transform 0.3s ease;
+}
+
+.icon-footer img:hover {
+    transform: scale(1.2);
+}
+
+/* =========================================
+   9. صفحات تسجيل الدخول والإنشاء (Login & Signup)
+========================================= */
+.login-sec, .registration {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f7f6;
+    padding: 20px;
+}
+
+.login-container, .registration-container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+}
+
+.login-container h2, .registration-container h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+form input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+form button {
+    width: 100%;
+    background: #3498db;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #2980b9;
+}
+
+.signup {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+/* كود تنسيق الرئيسية */
+.landing {
+    position: relative;          /* لضمان عدم التداخل مع العناصر التالية */
+    width: 100%;
+    min-height: 80vh;          /* مساحة كافية للقسم */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                      url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1600');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;       /* مسافة فاصلة بين الرئيسية والمحتوى التالي */
+}
+
+.landing .Content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.landing button {
+    padding: 15px 30px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.landing button:hover {
+    background-color: #2980b9;
+}
